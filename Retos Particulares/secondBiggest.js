@@ -1,11 +1,6 @@
 function secondBiggest(array){
-    let biggest = array.reduce((a,b)=>{
-        return Math.max(a,b);
-    });
-
-    console.log(biggest);
-    let secondBiggest=0;
-
+    let secondBiggest = array.sort((a,b)=> b-a)[1];
+ return secondBiggest;
 }
-array=[20,30,5,1,2,3,4,8]
-secondBiggest(array);
+array=[20,30,5,0,1,2,3,4,8]
+console.log(secondBiggest(array));

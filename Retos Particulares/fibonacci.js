@@ -5,7 +5,7 @@ function fibonacci(element){
     for(let i=0; i<element;i++){
         if(i==0 || i==1 ){
             secuencia.push(i);
-            continue;                    
+          continue;                    
         } else{
             secuencia.push(secuencia[i-2] + secuencia[i-1]);
         }
